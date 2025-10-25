@@ -123,6 +123,13 @@ nvidia-smi
 which nvcc
 ```
 
+### Test Images
+
+Download sample test images from:
+**[CUDA Canny Test Images Dataset](https://huggingface.co/datasets/DEADSERPENT/cuda-canny-test-images/tree/main)**
+
+Place downloaded images in the `res/` directory for testing.
+
 ### 5-Minute Quick Start
 
 **Step 1: Clone and Navigate**
