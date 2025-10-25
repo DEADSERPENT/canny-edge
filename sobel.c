@@ -1,7 +1,12 @@
-#include "./sobel/sobel.h"
+#define _USE_MATH_DEFINES
+#include "canny/sobel.h"
 #include <math.h>
 #include <stdlib.h>
 #include <float.h>
+
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
 typedef unsigned char byte;
 //only the convolution filter
 void sobel(byte *input, byte *output, int h, int w){

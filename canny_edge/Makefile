@@ -134,7 +134,7 @@ endif
 
 # for now, very simple Makefile: assume one file
 BINARY:=canny
-SOURCES:=$(shell find *.cu)
+SOURCES:=$(shell find *.cu 2>/dev/null)
 OBJECTS:=$(SOURCES:%.cu=%.o)
 
 # Target rules

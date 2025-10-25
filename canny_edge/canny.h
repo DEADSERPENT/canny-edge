@@ -41,6 +41,12 @@ __host__ void gaussian_filter_1d(float blurStd, float **fltp,
 __global__ void toGrayScale(byte *dImg, byte *dImgMono, int h, int w, int ch);
 __global__ void fromGrayScale(byte *dImgMono, byte *dImg, int h, int w, int ch);
 
+// adaptive_threshold.cu
+__host__ void compute_adaptive_thresholds(byte *dMagnitude, int h, int w,
+                                          float *threshold1, float *threshold2,
+                                          float lowPercentile = 0.1f,
+                                          float highPercentile = 0.3f);
+
 // clock types
 enum { CLK_ALL, CLK_GRAY, CLK_BLUR, CLK_SOBEL, CLK_THIN, CLK_THRES, CLK_HYST };
 
